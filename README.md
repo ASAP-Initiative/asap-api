@@ -1,10 +1,14 @@
 # ASAP API
 
-## Docker
+## Development
 
-### Build
+### Docker Build
 
-### Run
+```shell
+docker build -t asap-api:$(cat src/VERSION) .
+```
+
+### Docker Run
 
 ```shell
 docker run -it -w /local -v $PWD:/local -v /data/asap:/data/asap -p 8000:8000 --entrypoint sh asap-api:0.1
