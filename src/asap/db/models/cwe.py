@@ -43,7 +43,6 @@ def cwe_load_data():
     with open(_cwe_csv_file, newline='') as csv_file:
         reader = csv.DictReader(csv_file)
         with Session(db_engine) as db_session:
-            db_session.
             for row in reader:
                 db_session.add(
                     CWE(id=row['CWE-ID'], name=row['Name'], description=row['Description'])
