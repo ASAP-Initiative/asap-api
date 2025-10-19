@@ -1,0 +1,5 @@
+aiokafka 
+asyncpg
+fastapi[standard]
+fastapi-utils[all]
+sqlmodel
